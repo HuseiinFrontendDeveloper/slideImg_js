@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* o'rtaga olib kelish uchun */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    height: 530px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.img-container {
+    /* ichidagi rasmlar yonma yon bolsin */
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background-color: rebeccapurple;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 49%;
+}
+
+button:hover {
+    opacity: 0.90;
+}
+
+button:focus {
+    outline: none;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
